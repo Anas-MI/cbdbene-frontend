@@ -1,0 +1,113 @@
+$mainDarkColor: #333333;
+$secondDarkColor: #252525;
+$thirdDarkColor: #202020;
+$black: #000;
+$mainGreyColor: #666;
+
+$snowWhite: #fffafa; // #1F223F;
+$snowWhiteH: #f7f5f5;
+$pearl: #faf5f5; // #FAF2F2;
+$pearlH: #fbefef; // #FAF2F2;
+$romance: #fffffb; //#f6f3eb;
+$ivory: #fffffb;
+
+$gainsboro: #dbdbdb;
+$desertStorm: #eee9e3;
+$romanceAlter: $gainsboro; //#eceae2;
+
+$mainLightColor: $ivory; // $romance; //$snowWhite; //#fffef2;
+$secondLightColor: $ivory; // $pearl; // #f6f5e8;
+$secondLightColorHover: $ivory; // $pearlH; //#f0efe1;
+$thirdLightColor: $ivory; // $romance; //$snowWhite; // #ebeade;
+$thirdLightColorHover: $ivory; // $romance; //$snowWhiteH; // #e5e4d8;
+$lightOne: #f6f5e8;
+$lightTwo: #fffef2;
+$grey20: rgba(51, 51, 51, 0.2);
+$black10: rgba(0, 0, 0, 0.1);
+$black20: rgba(0, 0, 0, 0.2);
+$red10: rgba(255, 0, 0, 0.1);
+$red20: rgba(255, 0, 0, 0.2);
+$red50: rgba(255, 0, 0, 0.5);
+
+// $hoverCardColor: #fbf8f5;
+// $hoverCardColor: #eee2d6;
+$cardColor: $mainLightColor; //#f7efe8;
+$newBlack: #303030;
+$newGoldB: #c0a36a;
+$newGoldB4: rgba(193, 163, 106, 0.4);
+$newSilver: #bdbdbd;
+
+$hoverCardColor: $romanceAlter;
+
+// colors
+$borderColor: $grey20;
+$darkColor: $secondDarkColor; //  copyright bg color | copyright dialog bg color | top alert bar bg
+$menuColor: $mainDarkColor; //-- menu color
+$footerTitleColor: $desertStorm; //$newGoldB; //$secondDarkColor; // footer menu title color
+$footerColor: $desertStorm; //$newSilver; // $black; //-- footer content color
+$errorColor: $red50;
+
+$footerInputColor: $mainGreyColor; //-- footer content color
+
+$sliderTextColor: $mainGreyColor; //--- slider text color
+$sliderTitleColor: $black; //--- slider title color
+
+$mainColor: #222222; // title color
+$alterColor: #fff;
+$mainTextColor: $thirdDarkColor; // content text color
+
+$mainBgColor: $mainLightColor; // background color one
+$subBgColor: $secondLightColor; // background color two
+$thirdBgColor: $thirdLightColor; // background color three
+$subBgColorHover: $secondLightColorHover; // background color two
+$thirdBgColorHover: $thirdLightColorHover; // background color three
+$fourthColor: #cc835c;
+
+$popupBg: $secondDarkColor; //var(--popup-bg);
+$cardBgColor: $lightTwo; // card bg for template
+$cardBgColor2: $lightOne; // card bg for template 2
+$copyBgColor: $darkColor;
+
+$subColor: #202020;
+$copyColor: $newSilver; //#ccc;
+$modalColor: #fff;
+$alertColor: #fff;
+
+$btnBg: $mainColor; //#424242;
+$btnHoverBg: $mainColor; //#4b5154;
+
+$btnMainColor: $mainDarkColor;
+$btnHoverColor: $secondLightColor;
+
+$darkBtnColor: #424242;
+
+$buttonColor1: $mainColor; //#6b7561;
+$buttonHoverColor1: $mainBgColor;
+$buttonColor2: $mainColor; //#424242;
+$buttonHoverColor2: $mainBgColor;
+$buttonColor3: $mainColor; //#424242;
+$buttonHoverColor3: $mainBgColor;
+$buttonColor4: $mainColor; //#424242;
+$buttonHoverColor4: $mainBgColor;
+$buttonColor5: $mainColor; //#1c1b00;
+$buttonHoverColor5: $mainBgColor;
+$buttonColor6: $mainColor; //#de001f;
+$buttonHoverColor6: $mainBgColor;
+$buttonColor7: $mainColor; //#6b7561;
+$buttonHoverColor7: $mainBgColor;
+$buttonColor8: $mainColor; //#1c1b00;
+$buttonHoverColor8: $mainBgColor;
+$buttonColor9: $mainColor; //#1c1b00;
+$buttonHoverColor9: $mainBgColor;
+$buttonColor10: $mainColor; //#1c1b00;
+$buttonHoverColor10: $mainBgColor;
+
+$buttonTemplate2: #0e0e0e;
+
+$goldDark: #886a4c;
+$goldLight: #e9b483;
+$newGold: #ece3d9;
+
+@mixin gradient($first: $goldDark, $second: $goldLight, $deg: 45deg) {
+  background: linear-gradient($deg, $first, $second, $first);
+}

@@ -1,0 +1,24 @@
+.cus-table-two {
+  display: flex;
+  flex-direction: column;
+}
+.cus-table-row {
+  display: flex;
+}
+.cus-table-heading {
+  flex: 1 1 50%;
+}
+.cus-table-content {
+  flex: 1 1 50%;
+}
+.cus-table-row:first-child > div {
+  border-top: 1px solid $borderColor;
+}
+.cus-table-row > div {
+  padding: 5px 15px;
+  border-bottom: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+}
+.cus-table-row > div:first-child {
+  border-left: 1px solid $borderColor;
+}

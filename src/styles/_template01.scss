@@ -1,0 +1,247 @@
+.no-padding {
+  padding: 0;
+}
+.banner-image {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ),
+    url(//www.doctorondemand.com/img/hero-images/urgent-care@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+.white-bg-p-80 {
+  // background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  background-color: $cardBgColor2;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 40px;
+}
+.margin-top-negative {
+  margin-top: -200px !important;
+}
+h3.heading-large {
+  font-size: $fontSizeTitle2;
+  padding-right: 50px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+.arrow-btn {
+  font-size: $fontSizeBody;
+  text-decoration: none;
+  font-weight: bold;
+  color: $buttonTemplate2;
+  cursor: pointer;
+}
+// .arrow-btn:hover {
+//   // color: $btnHoverBg;
+// }
+.arrow-btn svg {
+  color: $thirdBgColor;
+  width: 28px;
+  height: 28px;
+}
+.tab .left {
+  width: 30%;
+  display: inline-block;
+}
+
+.tab .right {
+  width: 70%;
+  display: inline-block;
+}
+.tab {
+  clear: both;
+}
+.tablist ul li a {
+  text-decoration: none;
+  font-size: $fontSizeBody;
+  color: $buttonTemplate2;
+  padding: 5px 10px;
+  font-weight: 600;
+  display: block;
+  border-right: 2px solid #ddd;
+}
+.tablist ul,
+ul.icon-list {
+  list-style: none;
+  padding-left: 0px;
+}
+.tablist ul li.active a {
+  color: $buttonTemplate2;
+  border-right: 2px solid;
+}
+.tabcontent {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.main-sec-heading {
+  font-size: $fontSizeTitle09;
+}
+.big-font {
+  font-size: $fontSizeBody12;
+}
+ul.icon-list svg {
+  color: $thirdBgColor;
+  margin-right: $fontSizeBody;
+}
+ul.icon-list li {
+  line-height: 1.7;
+  font-size: $fontSizeBody;
+  display: flex;
+  word-break: break-all;
+  padding: 5px 8px;
+}
+ul.icon-list .left-sec,
+ul.icon-list .right-sec {
+  width: 50%;
+  display: inline-block;
+}
+ul.icon-list .right-sec {
+  float: right;
+}
+.border-top {
+  border-top: 2px solid $thirdBgColor !important;
+}
+.blue-bg-btn {
+  background: $buttonTemplate2;
+  color: $mainBgColor !important;
+  padding: 18px 30px;
+  display: inline-block;
+}
+// .blue-bg-btn:hover {
+//   // background: $btnHoverBg;
+// }
+.btn {
+  display: block;
+  // padding: 0 30px;
+}
+.img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.padding-equal {
+  padding-top: 50px;
+}
+
+.img-wrapper h3 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 15%;
+  right: 20%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  @include titleStyle;
+  z-index: 9;
+}
+.img-wrapper:after {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: 5;
+}
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
+.mobile-show {
+  display: none;
+}
+.mobile-show a.arrow-btn.blue-bg-btn {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+.accordian-heading {
+  font-size: $fontSizeBody12;
+  font-weight: bold;
+  color: $mainColor;
+  line-height: 1.7;
+  border-bottom: 2px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.accordian-heading:before {
+  position: absolute;
+  content: "";
+  border: 1px solid #ddd;
+  width: 50px;
+  bottom: -2px;
+  left: -50px;
+}
+.accordian-heading:after {
+  position: absolute;
+  content: "";
+  border: 1px solid #ddd;
+  width: 50px;
+  bottom: -2px;
+  right: -50px;
+}
+.accordian-heading .right {
+  float: right;
+  width: auto;
+  padding-top: 0;
+  height: auto;
+  margin-top: -2px;
+  color: $thirdBgColor;
+  vertical-align: middle;
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
+  .white-bg-p-80 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .border-top {
+    margin-top: 20px;
+  }
+  .heading-large {
+    font-size: $fontSizeTitle15;
+  }
+  .mobile-diifer {
+    box-shadow: none;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  .margin-top-negative {
+    margin-top: 0px;
+  }
+  .mobile-show {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .img-wrapper {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .white-bg-p-80 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

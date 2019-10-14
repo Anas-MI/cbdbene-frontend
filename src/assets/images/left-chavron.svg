@@ -1,0 +1,15 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" 
+    width="14" height="14" 
+    aria-labelledby="f7ce7cf1-489f-4a8e-97b6-f282be26b629"
+    class="Icon CPBodyScrollable-navBtnIcon"
+    role="img"
+    viewBox="0 0 50 50"
+    >
+    <title id="f7ce7cf1-489f-4a8e-97b6-f282be26b629">
+        Scroll left
+    </title>
+    <g>
+        <polygon points="25,31.3 4.2,10.5 0.1,14.6 25,39.5 50,14.6 45.9,10.5 " />
+    </g>
+</svg>

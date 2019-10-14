@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Clarendon Bold";
+  src: url("Clarendon-Bold.woff2") format("woff2"),
+    url("Clarendon-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Clarendon Black";
+  src: url("ClarendonBT-Black.woff2") format("woff2"),
+    url("ClarendonBT-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,0 +1,131 @@
+.product-view {
+  div[class^="container"] {
+    div {
+      background-size: contain !important;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .size-display {
+    font-size: $fontSizeBody;
+  }
+  .slider-navs {
+    position: absolute;
+    left: 0;
+    right: 20px;
+    // padding-left: 20px;
+    bottom: 0px;
+    * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    & > button {
+      font-size: 0;
+      border: none;
+      position: relative;
+      width: 23px;
+      height: 23px;
+      background-color: transparent;
+      &::before {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &[disabled] {
+        opacity: 0.8;
+      }
+      &.carousel__back-button {
+        // left: 50px;
+        &::before {
+          border-top: 2px solid #202020;
+          border-left: 2px solid #202020;
+          transform: rotate(-45deg);
+        }
+      }
+      &.carousel__next-button {
+        // left: 70px;
+        &::before {
+          border-top: 2px solid #202020;
+          border-right: 2px solid #202020;
+          transform: rotate(45deg);
+        }
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .carousel__dot-group {
+      margin-bottom: 2px;
+      margin-left: 20px;
+      button {
+        width: 23px;
+        height: 23px;
+        background: transparent;
+        border: none;
+        position: relative;
+        span {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background: transparent;
+          border-radius: 50%;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          border: 2px solid #ccc;
+        }
+        &.carousel__dot--selected {
+          span {
+            background: #202020;
+          }
+        }
+        &::focus,
+        &::active {
+          outline: none;
+        }
+      }
+    }
+  }
+  .toggle-zoom {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+  }
+  .toggle-fav {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &.fav {
+      span {
+        color: #ff5722;
+      }
+    }
+  }
+  @media (max-width: 639px) {
+    padding-bottom: 30px;
+    .slider-navs {
+      bottom: 10px;
+    }
+  }
+}

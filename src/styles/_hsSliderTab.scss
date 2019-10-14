@@ -1,0 +1,67 @@
+.hs-tab-container {
+  @media (min-width: 640px) {
+    padding-top: 100px;
+    margin-bottom: -40px;
+  }
+  display: block;
+  overflow: auto;
+  white-space: nowrap;
+  margin: auto;
+  text-align: center;
+
+  & > .hs-tab-button {
+    display: inline-block;
+  }
+}
+.hs-tab-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: $mainGreyColor;
+  text-align: center;
+  user-select: none;
+  &:not(.hs-active) {
+    cursor: pointer;
+  }
+  .hs-tab-image {
+    display: block;
+    padding-bottom: 10px;
+    svg,
+    img {
+      object-fit: contain;
+      width: 80px;
+      height: 80px;
+      color: $mainGreyColor;
+      .svg-fill {
+        fill: $mainGreyColor;
+      }
+    }
+  }
+  &.hs-active {
+    color: $secondDarkColor;
+    .hs-tab-image {
+      svg,
+      img {
+        color: $secondDarkColor;
+        fill: $secondDarkColor;
+        .svg-fill {
+          fill: $secondDarkColor;
+        }
+      }
+    }
+  }
+}
+
+.hs-tab-button .hs-tab-image.hs-icon-hover {
+  display: inline-block;
+  width: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 50em;
+  transition: all 0.4s;
+}
+.hs-tab-button .hs-tab-image.hs-icon-hover:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+.hs-tab-title {
+  display: block;
+}

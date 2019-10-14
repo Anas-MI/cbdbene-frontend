@@ -1,0 +1,22 @@
+.dark-banner {
+  background-color: $mainColor;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: $alterColor;
+  * {
+    color: inherit;
+  }
+  @media (max-width: 640px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .display-4{
+      font-size: 2rem;
+    }
+  }
+}
+.upto-dark-banner {
+  @media (min-width: 992px) {
+    margin-top: -250px;
+    margin-bottom: 100px;
+  }
+}

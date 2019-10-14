@@ -1,0 +1,33 @@
+.review-info-wrapper {
+  // padding: 20px;
+  width: 540px;
+  max-width: 100%;
+}
+
+.review-info-line {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-info-left-content {
+  display: flex;
+}
+
+.star-counts {
+}
+
+.stars {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.review-info-right-content {
+  width: 100px;
+  height: 20px;
+}
+.review-info-wrapper {
+  // background-color: #fff;
+}

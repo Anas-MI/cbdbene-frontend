@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Caslon Bold";
+  src: url("Caslon-Bold.woff2") format("woff2"),
+    url("Caslon-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caslon Bold";
+  src: url("Caslon-Bold.woff2") format("woff2"),
+    url("Caslon-Bold.woff") format("woff");
+  font-weight: Bold;
+  font-style: normal;
+}

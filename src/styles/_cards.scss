@@ -1,0 +1,56 @@
+// top number card
+
+.top-number-card {
+  border: 1px solid $borderColor;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &__inner {
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    background-color: $desertStorm;
+  }
+  &__number-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  &__title {
+    font-size: 20px;
+  }
+  &__content {
+    font-size: 14px;
+  }
+  &__number {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    background-color: $mainBgColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid $borderColor;
+    margin-top: -40px;
+  }
+  &--left {
+    .top-number-card {
+      &__inner {
+        padding: 15px 15px 15px 0px;
+        text-align: left;
+        background-color: $desertStorm;
+        display: flex;
+        align-items: center;
+      }
+      &__number {
+        margin: auto;
+        margin-left: -40px;
+        margin-right: 20px;
+      }
+      &__number-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

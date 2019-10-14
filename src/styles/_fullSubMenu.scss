@@ -1,0 +1,89 @@
+@media (min-width: 1025px) {
+  section.menu-wrapper {
+    position: fixed;
+    left: 0;
+    right: 10px;
+    top: $headerHeight;
+    bottom: 0;
+    height: calc(100vh - #{$headerHeight});
+    overflow: hidden;
+    z-index: 99999999;
+    &.isTopBar {
+      top: $headerHeight + 45;
+    }
+    .menu-wrapper-inner {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      padding-right: 20px;
+      box-sizing: content-box;
+      & > div {
+        background: $thirdLightColor;
+      }
+    }
+    &:not(.visible) {
+      pointer-events: none;
+    }
+  }
+  .cart-open {
+    section.menu-wrapper {
+      right: $totalSideWidth; //+ $sideBarOffset;
+    }
+  }
+  .Nav-listItem {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 25px;
+      top: 100%;
+      margin: auto;
+      // width: 9px;
+      // height: 9px;
+      width: 15px;
+      height: 15px;
+      transform: translate(0px, -10px) rotate(45deg);
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    &:last-child:after {
+      right: 0px;
+    }
+    &:after {
+      // top: calc(100% + 20px);
+      top: calc(100% + 32px);
+      background: linear-gradient(135deg, #424242 50%, transparent 50%);
+      transform: translate(0px, 0px) rotate(45deg);
+      transition: opacity 0.4s;
+      border: none;
+    }
+    // &:after{
+    //     opacity: 0;
+    //     width: 16px;
+    //     height: 16px;
+    //     top: calc(100% + 3px);
+    //     transform: none;
+    //     background-size: contain;
+    //     background-image: url(./assets/images/bene-leaf-thumb.png);
+    // }
+    &.active-sub-menu {
+      position: relative;
+      &:after {
+        transform: rotate(45deg);
+        // opacity: 1;
+      }
+      // &:after {
+      //     transform: none;
+      //     opacity: 1;
+      // }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  section.menu-wrapper {
+    display: none !important;
+  }
+}

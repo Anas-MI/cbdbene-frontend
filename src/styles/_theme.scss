@@ -1,0 +1,895 @@
+$small-font: 13px;
+$smallScr: 640px;
+$mediumScr: 1025px;
+
+$lightColor: var(--lightbgcolor);
+
+// $firstFontReg: "Suisse Regular", "Nunito", "sans-sarif", "sarif";
+// $firstFontMed: "Suisse Medium", "Nunito", "sans-sarif", "sarif";
+// $secondFontReg: "Zapf Humanist", "Raleway", "sans-sarif", "sarif";
+// $firstFontReg: "Questrial", "sans-sarif", "sarif";
+// $firstFontMed: "Questrial", "sans-sarif", "sarif";
+// $secondFontReg: "Questrial", "sans-sarif", "sarif";
+$firstFontReg: "Montserrat", "sans-sarif", "sarif";
+$firstFontMed: "Montserrat", "sans-sarif", "sarif";
+$secondFontReg: "Montserrat", "sans-sarif", "sarif";
+
+$mainFontFamily: $secondFontReg;
+$subFontFamily: $firstFontMed;
+$bodyFontFamily: $firstFontReg;
+
+// uses
+$menuFontFamily: $firstFontReg;
+$headerAlertFamily: $firstFontReg;
+$titleFontFamily: $secondFontReg;
+$btnFontFamily: $firstFontMed;
+$quoteTextFamily: $firstFontMed;
+$footerMenuTitleFamily: $firstFontReg;
+$footerMenuFamily: $firstFontMed;
+$footerFamily: $firstFontReg;
+$footerInputFamily: $firstFontReg; //-- footer content color
+
+.bg-p1 {
+  background-color: $snowWhite !important;
+}
+.bg-p2 {
+  background-color: $snowWhiteH !important;
+}
+
+@mixin titleStyle {
+  font-size: $fontSizeTitle;
+  font-family: $titleFontFamily;
+  line-height: 1.4;
+  @media (max-width: 639px) {
+    line-height: 1.3;
+    font-size: $fontSizeTitleSm;
+  }
+}
+@mixin shopSliderTitle {
+  font-family: $bodyFontFamily;
+  font-size: $fontSizeTitle08;
+}
+@mixin sliderProductTitle {
+  font-family: $bodyFontFamily;
+  padding-bottom: 1px;
+  font-size: $sliderProductTitle;
+  color: $mainColor;
+}
+@mixin productDetailTitle {
+  font-size: $fontSizeTitle;
+  font-family: $bodyFontFamily;
+  @media (max-width: 639px) {
+    font-size: $fontSizeTitleSm;
+  }
+}
+@mixin smallTitle {
+  font-size: $smallFontSize;
+  color: $mainDarkColor;
+  line-height: 1.4;
+  font-family: $bodyFontFamily;
+  font-weight: 500;
+}
+@mixin smallDescription {
+  @include smallTitle;
+  font-weight: 400;
+  color: $mainGreyColor;
+}
+@mixin defaultBorderBottom {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+@mixin boldBorderBottom {
+  border-bottom: 2px solid #333;
+}
+@mixin borderBtnColor($size: 2px, $color: $btnBg) {
+  border-bottom: $size solid $color;
+}
+.f-14 {
+  font-size: 14px !important;
+  height: 43px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+}
+
+.login-variation-ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: $fontSizeBody09;
+}
+.login-variation-ul li {
+  float: left;
+  padding: 15px;
+}
+.dropdown-full-width.dropdown-menu.show {
+  width: 100%;
+}
+.panel-section.card {
+  border: 1px solid #d6d8d9;
+  margin-bottom: 25px;
+}
+ul.myAccount-recent-parchase-ul li {
+  float: left;
+  padding: 0px;
+  // width: 27%;
+  margin-right: 20px;
+  font-size: $fontSizeBody09;
+  margin-left: 16px;
+}
+ul.myAccount-recent-parchase-ul {
+  // list-style: none;
+}
+li.my-accountLink.nav-item {
+  padding: 10px;
+  border-bottom: 1px solid #d6d8d9;
+}
+li.my-accountLink.nav-item a {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 10px;
+  color: #000;
+}
+li.my-accountLink.active.nav-item {
+  background: #d6d8d9;
+}
+p.profile-p {
+  text-align: center;
+  font-size: $fontSizeBody09;
+  padding: 0px 10px;
+}
+li.my-accountLink.active.nav-item:before {
+  content: "";
+  border: 1px solid;
+}
+
+.small-font {
+  font-size: $fontSizeBody08;
+}
+ul.myProifle-enableCheckout-ul li {
+  padding: 16px 0px;
+  border-top: 1px solid #d6d8d9;
+}
+
+ul.myProifle-enableCheckout-ul {
+  list-style-type: none;
+  padding: 16px !important;
+  width: 100%;
+}
+span.myProifle-enableCheckoutTooltip {
+  float: right;
+  position: relative;
+  border: 2px solid #d6d8d9;
+  border-radius: 50%;
+  width: 25px;
+  line-height: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+.favrate-list-image-width {
+  width: 100px;
+}
+.sidebar-icon {
+  font-size: $fontSizeBody12;
+  color: #111;
+  line-height: 23px;
+  width: 30px;
+  margin-right: 10px;
+}
+table.table.wihtout-boder tr th {
+  border: none !important;
+  padding-left: 5%;
+}
+table.table.wihtout-boder tr td {
+  border: none !important;
+  padding-left: 6%;
+}
+div.margin-top-5 {
+  margin-top: 5px;
+}
+
+.error-direct {
+  font-size: $fontSizeBody08;
+  color: $errorColor;
+}
+
+.cusrsorDisable {
+  cursor: not-allowed;
+}
+.border-left-right {
+  border-right: 1px solid #bbb;
+}
+.border-left-right:last-child {
+  border: none;
+}
+
+.heart-right {
+  text-align: right;
+  float: right;
+  @media (max-width: 499px) {
+    position: relative;
+    right: 40px;
+    padding: 4px 6px;
+  }
+}
+
+.f-12 {
+  font-size: 12px !important;
+}
+
+.mainLoder {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $mainBgColor;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+.spinner {
+  margin: auto;
+  width: 88px;
+  text-align: center;
+}
+.box-loader {
+  height: 250px;
+  display: block;
+  display: flex;
+  transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box-loader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.spinner .bounce4 {
+  -webkit-animation-delay: 0.16s;
+  animation-delay: 0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.FormText.LanguageModal-search input {
+  color: $modalColor;
+  font-weight: normal;
+}
+
+// .btn1 {
+//   background: $buttonColor1 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn1:hover {
+//   opacity: 0.8;
+// }
+
+// .btn2 {
+//   background: $buttonColor2 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn2:hover {
+//   opacity: 0.8;
+// }
+
+// .btn3 {
+//   background: $buttonColor3 !important;
+//   cursor: pointer;
+//   border: none;
+//   color: #fff !important;
+// }
+// .btn3:hover {
+//   opacity: 0.8;
+// }
+
+// .btn4 {
+//   background: $buttonColor4 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn4:hover {
+//   opacity: 0.8;
+// }
+// .btn5 {
+//   background: $buttonColor5 !important;
+//   cursor: pointer;
+//   border: none;
+//   color: #fff !important;
+// }
+// .btn5:hover {
+//   opacity: 0.8;
+// }
+// .btn6 {
+//   background: $buttonColor6 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn6:hover {
+//   opacity: 0.8;
+// }
+// .btn7 {
+//   background: $buttonColor7 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn7:hover {
+//   opacity: 0.8;
+// }
+// .btn8 {
+//   background: $buttonColor8 !important;
+//   cursor: pointer;
+//   border: none;
+//   color: #fff !important;
+// }
+// .btn8:hover {
+//   opacity: 0.8;
+// }
+// .btn9 {
+//   background: $buttonColor9 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn9:hover {
+//   opacity: 0.8;
+// }
+// .btn10 {
+//   background: $buttonColor10 !important;
+//   cursor: pointer;
+//   border: none;
+// }
+// .btn10:hover {
+//   opacity: 0.8;
+// }
+
+// button.btn.btn-lg.btn-custom {
+//   background: $buttonColor6 !important;
+//   color: #fff;
+//   border: none;
+// }
+// button.btn.btn-lg.btn-custom2 {
+//   background: $buttonColor6 !important;
+//   color: #fff;
+//   border: none;
+// }
+
+.table-responsive.middletable table td {
+  vertical-align: middle;
+}
+
+.col-md-6.col-sm-6.col-xs-12.googlelogin div {
+  display: none;
+}
+.col-md-6.col-sm-6.col-xs-12.googlelogin span {
+  margin-left: 10px;
+}
+.googlelogin button {
+  box-shadow: 1px 1px 1px 1px #bbb !important;
+}
+
+.popup-alert-icon {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.registraionfooter-ul-a {
+  font-size: $fontSizeBody12;
+}
+.title-80 {
+  font-size: $fontSizeTitle08;
+}
+
+button.kep-login-facebook.metro {
+  font-family: $subFontFamily !important;
+  font-weight: 500 !important;
+}
+
+.react-phone-number-input__icon {
+  width: 1.24em;
+  height: 0.93em;
+  border: none !important;
+  box-sizing: content-box;
+  margin-top: -35px;
+}
+.react-phone-number-input__country-select-arrow {
+  margin-top: -1.5em !important;
+}
+
+.shadowBoxBackground {
+  background: $thirdBgColor;
+}
+
+ol.suggestionPassword li span {
+  cursor: pointer;
+  margin-bottom: 10;
+  padding: 10px;
+}
+.fa.fa-search.form-control-feedback {
+  position: absolute;
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.ci {
+  cursor: initial !important;
+}
+ul.address-ul {
+  list-style-type: none;
+}
+ul.address-ul li {
+  float: left;
+  margin-left: 10p;
+  border-left: 1px solid;
+  padding: 2px 12px;
+}
+ul.address-ul li:first-child {
+  border-left: none;
+}
+
+.display-enter,
+.display-appear {
+  top: var(--menu-starting-top);
+  width: var(--toggler-width);
+  max-height: var(--toggler-height);
+  color: var(--fade-from-color);
+  background-color: var(--toggler-bg-color);
+}
+.display-enter-active,
+.display-appear-active {
+  top: var(--menu-ending-top);
+  width: var(--menu-width);
+  max-height: var(--menu-max-height);
+  color: var(--fade-to-color);
+  background-color: var(--menu-bg-color);
+  transition: all var(--timeout);
+}
+
+ol.howSoesLi li {
+  // margin-top: 25px;
+}
+.height100vh {
+  min-height: 100vh;
+}
+
+.timeline-block {
+  position: relative;
+  height: 180px;
+  z-index: 1;
+}
+
+.timeline-block .timeline-line {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 3px;
+  background: $thirdBgColor;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.timeline-block .timeline-progress {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 0;
+  width: 3px;
+  border-radius: 6px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #202020 0%,
+    #202020 44%,
+    #202020 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.timeline-bookmark {
+  position: absolute;
+  top: 0px;
+  left: 36px;
+}
+
+.timeline-bookmark > div {
+  margin-top: -8px;
+  margin-left: 5px;
+}
+
+div.timeline-bookmark::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -19px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: $mainBgColor;
+  box-shadow: 0 0 0 3px $secondDarkColor, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+div.timeline-bookmark.visited::before {
+  opacity: 0.7;
+}
+
+div.timeline-bookmark:hover::before {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 0px;
+  left: 36px;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.timeline-marker > div.text {
+  margin-top: -14px;
+  font-style: italic;
+}
+
+div.timeline-marker::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -21px;
+  height: 0px;
+  width: 12px;
+  border-bottom: 2px solid #000;
+}
+.timeline-bookmark div {
+  opacity: 0.5;
+}
+.timeline-bookmark.visited div {
+  cursor: pointer;
+  opacity: 1;
+}
+.disableFormField {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.newBackground {
+  background: $thirdBgColor;
+}
+.arrowInMultipart:after {
+  border-bottom: 3rem solid transparent;
+  border-left: 3rem solid $thirdBgColor;
+  border-top: 3rem solid transparent;
+  content: "";
+  display: flex;
+  height: 0;
+  /* left: 0; */
+  position: absolute;
+  /* top: calc(50vh - 8.7rem); */
+  width: 3rem;
+  right: -45px;
+}
+
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+  width: 50%;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkround {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-color: $subColor;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkround {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkround:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkround:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkround:after {
+  left: 2px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $subColor;
+}
+
+/* The check */
+.check {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-color: $subColor;
+  border-style: solid;
+  border-width: 2px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid;
+  border-color: $subColor;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cust-btn {
+  margin-bottom: 10px;
+  background-color: $subColor;
+  border-width: 2px;
+  border-color: $subColor;
+  color: #fff;
+}
+.cust-btn:hover {
+  border-color: $subColor;
+  background-color: #fff;
+  color: $subColor;
+  border-radius: 20px;
+  transform-style: 2s;
+}
+.radio span {
+  margin-top: -6px;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.vw-text-divider span {
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  padding: 10px;
+}
+.vw-text-divider:before {
+  background-color: #d2d2d2;
+  content: "";
+  height: 0.1rem;
+  left: 0;
+  position: absolute;
+  margin-top: 12px;
+  width: 100%;
+}
+.arrowInMultipart {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.vw-text-divider {
+  text-align: center;
+  position: relative;
+}
+.timeline-block {
+  display: inline-block;
+  max-width: 100%;
+  width: 300px;
+}
+
+.full-height-section-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 110px);
+}
+
+.full-height-section-body {
+  flex-grow: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.full-height-section-footer.pl-3 {
+  // position: absolute;
+  bottom: -3px;
+  /* min-width: 17%; */
+  border-top: 2px solid $thirdBgColor;
+  width: 100%;
+  left: 0;
+}
+.card-border {
+  border: 1px solid $thirdBgColor !important;
+  margin-top: 50px;
+}
+button.btn-xs.btn.btn-info {
+  padding: 7px;
+  margin: 2px;
+  font-size: 12px;
+}
+.card p {
+  font-size: 13px;
+  line-height: 1.3;
+}
+.card .rounded-circle {
+  margin-top: -20px;
+}
+.cartPrice {
+  float: right;
+  margin-top: 3px;
+}
+.col-md-3.align-content-center.justify-content-center {
+  min-width: 320px;
+}
+
+.simple-link {
+  padding: 0 !important;
+}
+.modal-header .close span {
+  font-size: 40px;
+  line-height: .5;
+}

@@ -1,0 +1,141 @@
+.simple-product-card {
+  width: 300px;
+  max-width: 100%;
+  min-height: 100%;
+  margin-top: 10px;
+  // padding: 10px 5px 0px 5px;
+  // &:hover {
+  //   .simple-product-card-btn-wrap {
+  //     // height: 55px;
+  //   }
+  //   .simple-product-card-image-inner {
+  //     // transform: translate(0px, -15px);
+  //   }
+  // }
+  @media (min-width: 1300px) {
+    width: calc(100% / 7);
+  }
+  @media (min-width: 1600px) {
+    width: calc(100% / 7);
+  }
+  // border-bottom: 1px solid $borderColor;
+  // &:first-child {
+  //   border-left: 1px solid $borderColor;
+  // }
+  // &:last-child {
+  //   border-right: 1px solid $borderColor;
+  // }
+}
+.isTopBar {
+  .simple-product-card {
+    // border-top: 1px solid $borderColor;
+  }
+}
+.cart-open {
+  .simple-product-card {
+    @media (min-width: 1300px) {
+      // width: calc(100% / 3);
+      width: calc(100% / 4);
+    }
+    @media (min-width: 1600px) {
+      width: calc(100% / 7);
+    }
+  }
+}
+
+.simple-product-card-title-wrap {
+  text-align: center;
+}
+.simple-product-card-image-wrap {
+  width: 105px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.simple-product-card-image-inner {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 100%;
+  transition: all 0.3s;
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: contain;
+  }
+}
+.simple-product-card-btn-wrap {
+  // height: 0;
+  // opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+  & > span {
+    padding: 10px;
+  }
+}
+.simple-product-card:hover {
+  .simple-product-card-btn-wrap {
+    opacity: 1;
+  }
+}
+.simple-product-card-inner {
+  padding: 10px;
+  // border: 1px solid $borderColor;
+  // background: $subBgColor;
+  background: $cardColor;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.19);
+  transition: all 0.3s;
+  &:hover {
+    background: $hoverCardColor;
+  }
+}
+.simple-product-card-title-wrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hover-gold-border {
+  // padding: 15px;
+  padding: 0px;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    // transform: scale(.01);
+    opacity: 0;
+    transition: all 0.4s;
+    // @include gradient($newGold, $newGold);
+    background: $mainColor;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.menu-wrapper {
+  .simple-product-card {
+    margin-top: 0px;
+  }
+}
+@for $i from 1 through 10 {
+  .line-h-#{$i} {
+    line-height: $i;
+  }
+}

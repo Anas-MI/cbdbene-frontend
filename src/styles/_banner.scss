@@ -1,0 +1,228 @@
+/* stylelint-disable */
+.MCEventIntro-details _:-ms-input-placeholder,
+:root .MCEventIntro-details {
+  width: calc((100% * 3 / 6) - 1px);
+}
+.MCHalfWidthFullBleedHero-imgWrapper {
+  overflow: visible;
+}
+.MCHalfWidthFullBleedHero-contentWrapper {
+  padding: $headerHeight 25%;
+}
+.MCItemCarouselCaption {
+}
+body.has-touch .MCItemCarouselCaption {
+  opacity: 1;
+}
+.MCItemCarouselIntro-group {
+  -ms-flex: 1;
+  flex: 1;
+}
+.MCItemCarouselIntro-group:first-child {
+  margin-right: 34px;
+}
+.MCItemCarouselIntro-title {
+  margin-bottom: 0;
+  color: $mainColor;
+}
+.MCList-title {
+  @include titleStyle;
+}
+
+/*Header_writtern Section*/
+.written_sec {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+  min-height: 749px;
+  float: none;
+  padding-top: 1px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.written_sec {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.written_sec_a {
+  width: 100%;
+  min-height: 550px;
+  padding-top: 20%;
+}
+
+.content_section {
+  // width: 45%;
+  width: 512px;
+  max-width: 100%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: $fontSizeTitle09;
+}
+.content_section h2 {
+  text-align: left;
+  @include titleStyle;
+  padding-top: 20px;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}
+.content_section_2 {
+  // width: 45%;
+  width: 512px;
+  max-width: 100%;
+  padding: 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 27px;
+  font-family: $bodyFontFamily;
+  font-size: $fontSizeBody;
+}
+.content_section_2 p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.content_section_3 {
+  // width: 45%;
+  /* text-align: center; */
+  width: 512px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+  padding-bottom: 20px;
+  line-height: 25px;
+  font-family: $bodyFontFamily;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.content_section_3 a {
+  @include button();
+}
+.content_section_3 a {
+  svg {
+    width: 33px;
+    padding-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+  }
+  &:hover {
+    svg {
+      fill: $mainBgColor !important;
+      fill: $mainBgColor !important;
+    }
+  }
+}
+.content_section_3 a:hover {
+  background: $btnHoverBg;
+  fill: $mainBgColor;
+  color: $mainBgColor;
+  transition: all 0.6s ease;
+}
+.img_sec {
+  width: 50%;
+  min-height: 749px;
+  float: right;
+  // margin-top: -55.5%;
+}
+.header-img-sec img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img_header_sec {
+  // margin-top: -$headerHeight;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #f6f5e8;
+  background: $subBgColor; // #f6f5e8;
+  background: $mainBgColor; // #f6f5e8;
+  @media (min-width: 1025px) {
+    min-height: 100vh;
+  }
+}
+
+// Media Query FOr Writtern Section
+@media (min-width: 1025px) {
+  .written_sec {
+    align-items: flex-start;
+  }
+  .written_sec_a {
+    padding-top: 290px;
+  }
+}
+@media (max-width: 315px) {
+  .content_section_3 {
+    // width: 200%;
+  }
+}
+@media (max-width: 670px) {
+  .content_section {
+    width: 100%;
+  }
+
+  .content_section_2 {
+    width: 100%;
+  }
+
+  .content_section_3 {
+    width: 100%;
+  }
+}
+@media (max-width: 1155px) {
+  .content_section_3 {
+    // width: 51%;
+  }
+}
+@media (max-width: 1024px) {
+  .content_section_3 {
+    // width: 45%;
+  }
+  .written_sec_a {
+    padding-top: 0;
+    padding-bottom: 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img_header_sec {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .written_sec {
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logo {
+    display: none;
+  }
+  .img_sec {
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    float: none;
+    margin-top: 0 !important;
+  }
+  .written_sec_a {
+    width: calc(100% - 100px);
+  }
+}
+// Banner Slider Hover Effect
+
+@media (max-width: 650px) {
+  .written_sec_a {
+    width: calc(100% - 30px);
+    height: auto;
+    min-height: unset;
+  }
+}

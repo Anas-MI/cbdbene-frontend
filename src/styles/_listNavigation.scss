@@ -1,0 +1,59 @@
+.list-navigation {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-navigation-inner {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.list-navigation-item {
+  $thirdBgColor: #e8e8e8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: $thirdBgColor;
+  margin: 5px 15px;
+  position: relative;
+  overflow: visible;
+  border: 2px solid $thirdBgColor;
+  transition: all 0.4s 0.4s;
+}
+
+.list-navigation-item:not(:last-child) > span {
+  $thirdBgColor: #e8e8e8;
+  position: absolute;
+  height: 6px;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 100%;
+  background: $thirdBgColor;
+  border-top: 2px solid $thirdBgColor;
+  border-bottom: 2px solid $thirdBgColor;
+}
+
+.list-navigation-item:not(:last-child) > span:after {
+  content: "";
+  background: $mainColor;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  transition: all 0.4s;
+}
+.list-navigation-item.is-filled:not(:last-child):not(.is-current) > span:after {
+  width: 100%;
+  transition: all 0.4s 0.4s;
+}
+.list-navigation-item.is-filled:not(.is-current) {
+  background: $mainColor;
+  transition: all 0.4s;
+}

@@ -1,0 +1,40 @@
+// .react-chat-bot {
+//     position: fixed;
+//     bottom: 0;
+//     right: 0;
+//     padding-right: 20px;
+// }
+// .chat-opener {
+//     width: 60px;
+//     height: 60px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: $mainBgColor;
+//     border-radius: 50%;
+//     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+//     margin-bottom: 20px;
+//     cursor: pointer;
+// }
+.chat-custom-option {
+  background: "#f6f5e8";
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  color: #202020;
+  display: inline-block;
+  font-size: 13px;
+  padding: 12px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  &:not(.selected) {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+.chat-product-btn-wrap {
+  margin-left: -20px;
+  margin-right: -20px;
+}

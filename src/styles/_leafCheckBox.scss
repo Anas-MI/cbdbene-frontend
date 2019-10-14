@@ -1,0 +1,19 @@
+.leaf-checkbox-wrapper {
+  .leaf-checkbox-label {
+    @media (min-width: 769px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    img {
+      width: 70px;
+      padding-bottom: 10px;
+      @media (max-width: 768px) {
+        width: auto;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

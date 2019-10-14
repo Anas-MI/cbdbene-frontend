@@ -1,0 +1,55 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" 
+    width="22" height="22" 
+    class="Icon ProductDetails-moreBtnIcon"
+    data-ref="ingredientOverlay-icon"
+    role="img"
+    viewBox="0 0 50 50"
+    >
+    <style>
+    .Glyph-addAndCloseWithCircle--circle {
+        fill: transparent;
+        stroke: #333;
+        stroke-width: 3px;
+        -webkit-transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .Glyph-addAndCloseWithCircle--plus {
+        fill: #333;
+        opacity: 1;
+        stroke: #333;
+        stroke-width: 2px;
+        -webkit-transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1), stroke 200ms cubic-bezier(0.645, 0.045, 0.355, 1), opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1), stroke 200ms cubic-bezier(0.645, 0.045, 0.355, 1), opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .Glyph-addAndCloseWithCircle--close {
+        fill: #fffef2;
+        fill: #fafafa;
+        fill: var(--mainbgcolor, #fafafa);
+        opacity: 0;
+        stroke: #fffef2;
+        stroke: #fafafa;
+        stroke: var(--mainbgcolor, #fafafa);
+        stroke-width: 2px;
+        -webkit-transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+</style>
+    <g>
+        <circle
+        class="Glyph-addAndCloseWithCircle--circle"
+        cx="25"
+        cy="25"
+        r="22"
+        fill="none"
+        />
+        <polygon
+        class="Glyph-addAndCloseWithCircle--plus"
+        points="26.2,15.2 23.8,15.2 23.8,23.9 15,23.9 15,26.4 23.8,26.4 23.8,35.1 26.2,35.1 26.2,26.4 35,26.4 35,23.9 26.2,23.9 "
+        />
+        <polygon
+        class="Glyph-addAndCloseWithCircle--close"
+        points="32.9,19 31.2,17.3 25,23.4 18.8,17.2 17,19 23.3,25.2 17.1,31.3 18.8,33 25,26.9 31.2,33.1 33,31.3 26.7,25.1 "
+        />
+    </g>
+</svg>

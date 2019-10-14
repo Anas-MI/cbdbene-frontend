@@ -1,0 +1,29 @@
+.transition-item-enter {
+  opacity: 0;
+}
+.transition-item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.transition-item-exit {
+  opacity: 1;
+}
+.transition-item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.transition-item3-enter {
+  opacity: 0;
+}
+.transition-item3-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.transition-item3-exit {
+  opacity: 1;
+}
+.transition-item3-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}

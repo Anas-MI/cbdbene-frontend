@@ -1,0 +1,211 @@
+/*footer Section*/
+
+b,
+strong {
+  font-weight: 500;
+}
+
+.footer-sec {
+  width: 100%;
+  background-color: $mainColor;
+}
+.border-top-footer {
+  @media (min-width: 640px) {
+    border-top: 1px solid $borderColor;
+  }
+}
+.footer-inside {
+  width: 100%;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.footer-inside-content {
+  width: 14%;
+  padding-top: 40px;
+  float: left;
+  margin-left: 20px;
+}
+.footer-inside-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-inside-content ul li {
+  padding-top: 13px;
+  font-family: $footerMenuFamily;
+  font-size: $fontSizeFooter;
+  font-weight: 400;
+  line-height: 1.1;
+  color: $footerColor;
+  cursor: pointer;
+  a,
+  a:hover {
+    color: inherit;
+  }
+}
+.footer-inside-content ul li:first-child {
+  padding-top: 0;
+  font-family: $footerMenuTitleFamily;
+  font-size: $fontSizeFooterMenuTitle;
+  cursor: text;
+}
+.footer-inside-content-last {
+  width: 30%;
+  float: left;
+}
+.footer-inside-content-last h4 {
+  padding-top: 37px;
+  font-family: $footerFamily;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: $fontSizeFooter;
+  color: $footerColor;
+  // color: $footerTitleColor;
+}
+.footer-inside-content-last input {
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid currentColor;
+  background: transparent;
+  font-size: $fontSizeFooterInput;
+  letter-spacing: 1.5px;
+  margin-top: 1em;
+  color: $footerInputColor;
+  font-family: $footerInputFamily;
+  &::placeholder {
+    color: $footerInputColor;
+  }
+}
+.footer-inside-content-last {
+  .only-bottom-border {
+    input {
+      border-bottom-color: $footerTitleColor;
+    }
+  }
+}
+.footer-inside-content-last button {
+  color: $footerColor;
+  color: $footerTitleColor;
+}
+.copy {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: $copyBgColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy p {
+  font-size: $copyFontSize;
+  color: $copyColor;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+  font-family: $bodyFontFamily;
+}
+.copy-right {
+  p {
+    cursor: pointer;
+  }
+}
+
+// media Query
+
+@media (max-width: 1024px) {
+  .footer-inside-content-last {
+    width: 100%;
+    float: none;
+    overflow: auto;
+    padding-bottom: 40px;
+    input {
+      width: 250px;
+      max-width: calc(100% - 60px);
+      margin-left: 60px;
+    }
+  }
+  .footer-inside-content {
+    width: 21%;
+  }
+  .inside-content-last {
+    margin-top: 10px;
+    border-top: 1px solid #888888;
+  }
+  .inside-content-last h4 {
+    padding-top: 20px;
+    padding-left: 60px;
+  }
+}
+
+.toggle-footer {
+  color: $footerTitleColor;
+  font-family: $footerMenuTitleFamily;
+  font-size: $fontSizeFooterMenuTitle;
+}
+.card {
+  background: transparent;
+  border: none;
+}
+.footer-inside-content .toggle-footer {
+  background: transparent;
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 20px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  .icon {
+    transition: all 0.3s;
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+.card-body ul {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 639px) {
+  .footer-inside-two {
+    width: 100%;
+    margin: 0;
+  }
+  .footer-inside-content ul li:first-child {
+    font-weight: 600;
+    font-family: $subFontFamily;
+    display: none;
+  }
+  .footer-inside-content ul li:nth-child(2) {
+    padding-top: 0;
+  }
+  .inside-content-last {
+    border-top: none;
+  }
+  .inside-content-last h4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer-inside-content-last input {
+    margin-left: 15px;
+  }
+  .copy {
+    flex-direction: column;
+    // padding: 0;
+    // &>div{
+    //   width: 100%;
+    //   padding: 20px 10px;
+    //   &:not(:last-child){
+    //     border-bottom: 1px solid $copyColor;
+    //   }
+    // }
+  }
+}
+@media (min-width: 640px) {
+  .footer-inside-content ul li:first-child {
+    color: $footerTitleColor;
+    padding: 0px 0 30px;
+  }
+  .footer-country-change {
+    border-bottom: 1px solid transparent;
+    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    &:hover {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}

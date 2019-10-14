@@ -1,0 +1,37 @@
+/*Quote Swction*/
+.quote-sec {
+  width: 100%;
+  min-height: 500px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+}
+.quote-sec-inside {
+  width: 46%;
+  margin: auto;
+}
+.quote-sec-inside h2 {
+  text-align: center;
+  padding-top: 30px;
+  @include titleStyle;
+  line-height: 1.33;
+}
+.quote-sec-inside p {
+  text-align: center;
+  font-family: $quoteTextFamily;
+  font-size: $quoteTextSize;
+  line-height: 2;
+  margin-top: 20px;
+}
+
+// Quote Swction Responsive
+@media (max-width: 639px) {
+  .quote-sec-inside {
+    width: 90%;
+    font-size: $fontSizeTitle08;
+  }
+  .quote-sec {
+    min-height: auto;
+  }
+}

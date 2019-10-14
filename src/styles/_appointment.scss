@@ -1,0 +1,29 @@
+.newBackground {
+  background-color: $desertStorm;
+}
+.doctor-card {
+  background-color: $desertStorm !important;
+  border: 1px solid $borderColor !important;
+  transition: all 0.32s;
+  .rounded-circle {
+    margin-top: 15px;
+  }
+  button,
+  .btn {
+    padding: 7px;
+    margin: 2px;
+    font-size: 12px;
+    color: $mainColor;
+    background-color: $mainBgColor;
+    border-color: $mainBgColor;
+    &:hover,
+    &:active {
+      color: $mainBgColor;
+      background-color: $mainColor;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.09);
+    transform: translate(0px, -10px);
+  }
+}

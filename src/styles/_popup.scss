@@ -1,0 +1,318 @@
+.cus-modal {
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  margin: auto;
+  min-width: 320px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+  .modal-content {
+    border: none;
+    height: 100%;
+    background: transparent;
+  }
+}
+.LanguageModal {
+  .Modal-body {
+    background-color: $popupBg;
+    color: $modalColor;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    max-height: none;
+    max-width: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.LanguageModal-titleRow {
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 254, 242, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+.LanguageModal-title {
+  font-size: $fontSizeBody;
+  line-height: 1.2;
+  color: $modalColor;
+}
+.LanguageModal-closeButton {
+  color: $modalColor;
+}
+.LanguageModal-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+.LanguageModal-regionsContainer,
+.LanguageModal-countriesContainer,
+.LanguageModal-countryLanguagesContainer {
+  font-size: $fontSizeTitle08;
+  line-height: 1.75;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+}
+.LanguageModal-regionsContainer {
+  border-right: 1px solid rgba(255, 254, 242, 0.1);
+  width: 50%;
+}
+.LanguageModal-countriesContainer {
+  -ms-flex: 1;
+  flex: 1;
+}
+.LanguageModal-countryLanguagesContainer {
+  border-left: 1px solid rgba(255, 254, 242, 0.1);
+  display: none;
+}
+.LanguageModal-overflowContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.LanguageModal-scrollable {
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding-right: 25px;
+  width: calc(100% + 25px);
+}
+.LanguageModal-searchForm {
+  position: relative;
+}
+.LanguageModal-searchIcon {
+  bottom: 10px;
+  fill: #999;
+  height: 20px;
+  left: 10px;
+  position: absolute;
+  width: 20px;
+}
+.FormSelect,
+.FormText,
+.FormTextArea {
+  margin: 0 0 30px;
+  padding: 30px 10px 0;
+  position: relative;
+  width: 100%;
+  label {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+}
+.FormSelect-input,
+.FormText-input,
+.FormTextArea-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  font-size: $fontSizeBody;
+  border-color: $borderColor;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  // color: #333;
+  color: $subColor;
+  height: 40px;
+  text-overflow: ellipsis;
+  transition: all 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 100%;
+}
+.FormText-input {
+  line-height: 1;
+  padding: 8px 0;
+}
+.LanguageModal-search .FormText-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border-bottom-color: rgba(255, 254, 242, 0.1);
+  color: $subColor;
+  padding-left: 30px;
+}
+
+.LanguageModal-region,
+.LanguageModal-country,
+.LanguageModal-language {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+.LanguageModal-region {
+  cursor: pointer;
+  padding: 0 0 6px;
+}
+.LanguageModal-country {
+  font-size: $fontSizeTitle08;
+  line-height: 1.75;
+  break-inside: avoid;
+  cursor: pointer;
+  display: none;
+  padding: 2px 5px 2px 0;
+  &.matches {
+    display: block;
+  }
+}
+.LanguageModal-country-link {
+  display: inline-block;
+}
+.LanguageModal-selectedRegion,
+.LanguageModal-inactiveRegion,
+.LanguageModal-country-withLanguages.show-languages {
+  color: $subColor;
+  opacity: 0.8;
+}
+a:not([href]):not([tabindex]) {
+  &.LanguageModal-selectedRegion,
+  &.LanguageModal-inactiveRegion,
+  &.LanguageModal-country-withLanguages.show-languages {
+    color: $subColor;
+    opacity: 0.8;
+  }
+}
+.center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  width: calc(100% - 20px);
+  margin: auto;
+  .modal-inner {
+    min-height: 40vh;
+    // min-width: 60vh;
+    display: flex;
+    background-color: $mainBgColor;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    word-break: break-word;
+  }
+  .modal-dismiss {
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    top: 10px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+}
+.full-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: $smallScr) {
+  .LanguageModal-titleRow {
+    padding: 51px 34px;
+  }
+  .LanguageModal-regionsContainer,
+  .LanguageModal-countriesContainer,
+  .LanguageModal-countryLanguagesContainer {
+    font-size: $fontSizeTitle08;
+    line-height: 1.54;
+  }
+  .LanguageModal-regionsContainer,
+  .LanguageModal-countriesContainer,
+  .LanguageModal-countryLanguagesContainer {
+    padding: 34px;
+  }
+  .FormSelect,
+  .FormText,
+  .FormTextArea {
+    margin-bottom: 35px;
+    padding-top: 35px;
+  }
+  .LanguageModal-country {
+    font-size: $fontSizeTitle08;
+    line-height: 1.54;
+  }
+}
+@media (min-width: $mediumScr) {
+  .LanguageModal-regionsContainer,
+  .LanguageModal-countriesContainer,
+  .LanguageModal-countryLanguagesContainer {
+    font-size: $fontSizeTitle08;
+    line-height: 1.54;
+  }
+  .LanguageModal-regionsContainer,
+  .LanguageModal-countriesContainer,
+  .LanguageModal-countryLanguagesContainer {
+    padding: 20px 40px 40px;
+  }
+  .LanguageModal-regionsContainer {
+    width: 33.33333%;
+  }
+  .FormSelect-input,
+  .FormText-input,
+  .FormTextArea-input {
+    font-size: $fontSizeTitle08;
+  }
+  .LanguageModal-country {
+    font-size: $fontSizeTitle08;
+    line-height: 1.54;
+  }
+}
+@media (max-width: 349px) {
+  .LanguageModal-regionsContainer {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    background: $popupBg;
+  }
+  .LanguageModal-container {
+    flex-wrap: wrap;
+    flex: initial;
+    overflow: auto;
+    position: relative;
+  }
+  .LanguageModal-regionsContainer .LanguageModal-region {
+    display: none;
+  }
+  .LanguageModal-search {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .copy-right {
+    margin-top: 10px;
+  }
+}

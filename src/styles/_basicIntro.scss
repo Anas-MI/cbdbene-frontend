@@ -1,0 +1,153 @@
+@media (min-width: 1025px) {
+  .MCRow > section:first-child:not(:only-child) {
+    padding: 0 calc((100% - 40px * 2) / 12) 0 40px;
+    width: calc((100% - 80px) * 5 / 12 - 20px);
+    margin-left: 40px;
+  }
+  .MCRow > section:nth-child(2),
+  .MCRow > section:only-child {
+    margin-right: calc((100% - 40px * 2) * 2 / 12 + 20px);
+    width: calc((100% - 40px) * 5 / 12);
+  }
+}
+.MCRow > section:nth-child(2),
+.MCRow > section:only-child {
+  margin-left: 20px;
+}
+.MCRow > section.MCRow-bleed {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  width: calc((100% - 40px * 2) * 7 / 12 + 60px);
+}
+.MCShareBtn-wrapper {
+  padding: 60px 0;
+}
+.MCLeftCopy-eyebrow {
+  font-size: 13px;
+  line-height: 1.4;
+  font-family: $mainFontFamily;
+  margin-bottom: 20px;
+}
+.MCLeftCopy-title {
+  font-family: $mainFontFamily;
+  font-size: 23px;
+  line-height: 1.4;
+}
+.MCLeftCopy-wrapper {
+  padding: 20px;
+}
+
+.Link.Link--isBtn {
+  font-family: $subFontFamily;
+  font-size: $btnFontSize;
+  line-height: 1.1;
+  border: 1px solid $borderColor;
+  color: $mainColor;
+  height: 60px;
+  min-width: 210px;
+  padding: 0 23px;
+  transition: color 200ms cubic-bezier(0.645, 0.045, 0.355, 1),
+    background-color 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: inline-flex;
+  align-items: center;
+
+  &:hover,
+  &.active {
+    color: $mainBgColor;
+    background-color: $mainColor;
+    .Link-icon {
+      fill: $mainBgColor;
+    }
+  }
+  &.Link-perl {
+    background-color: $secondLightColor;
+
+    &:hover,
+    &.active {
+      color: $mainBgColor;
+      background-color: $mainColor;
+      .Link-icon {
+        fill: $mainBgColor;
+      }
+    }
+  }
+  &.hollow-perl {
+    border-color: $mainBgColor;
+    color: $mainBgColor;
+    .Link-icon {
+      fill: $mainBgColor;
+    }
+    &:hover,
+    &.active {
+      color: $mainColor;
+      background-color: $mainBgColor;
+      .Link-icon {
+        fill: $mainColor;
+      }
+    }
+  }
+  &.alter {
+    color: $mainBgColor;
+    background-color: $mainColor;
+    .Link-icon {
+      fill: $mainBgColor;
+    }
+    &:hover {
+      color: $mainColor;
+      background-color: $mainBgColor;
+      .Link-icon {
+        fill: $mainColor;
+      }
+    }
+  }
+}
+
+.Link-icon {
+  fill: $mainColor;
+  height: 12px;
+  margin-left: 8px;
+  width: 12px;
+  transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.MCLinkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.basic-intro-continer {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+@media (min-width: 640px) {
+  .MCLeftCopy-title {
+    font-size: 27px;
+  }
+  .MCLeftCopy-wrapper {
+    padding: 34px 0;
+  }
+  .MCRow > section {
+    width: calc((100% - 34px * 2) * 4 / 6);
+  }
+  .MCRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 1025px) {
+  .MCLeftCopy-wrapper {
+    padding: 20px 0 40px;
+  }
+  .MCRow > section:nth-child(2),
+  .MCRow > section:only-child {
+    margin-left: 20px;
+    margin-right: calc((100% - 40px * 2) * 2 / 12 + 20px);
+    width: calc((100% - 40px) * 5 / 12);
+  }
+  .MCRow {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    transition: opacity 900ms 100ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}

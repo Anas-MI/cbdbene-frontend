@@ -1,0 +1,28 @@
+<svg
+    width="20" height="20" 
+    className="Icon LanguageModal-searchIcon"
+    role="img"
+    width="14" height="14" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 21 20"
+>
+    <g strokeWidth="1" fillRule="evenodd">
+    <g transform="translate(-198.000000, -67.000000)">
+        <g id="Group-4" transform="translate(198.000000, 67.000000)">
+        <rect
+            id="Rectangle"
+            transform="translate(16.353553, 16.353553) rotate(-45.000000) translate(-16.353553, -16.353553) "
+            x="15.3535534"
+            y="12.6109127"
+            width="2"
+            height="7.48528137"
+        />
+        <path
+            d="M8.5,17 C3.80557963,17 0,13.1944204 0,8.5 C0,3.80557963 3.80557963,0 8.5,0 C13.1944204,0 17,3.80557963 17,8.5 C17,13.1944204 13.1944204,17 8.5,17 Z M8.5,15 C12.0898509,15 15,12.0898509 15,8.5 C15,4.91014913 12.0898509,2 8.5,2 C4.91014913,2 2,4.91014913 2,8.5 C2,12.0898509 4.91014913,15 8.5,15 Z"
+            id="Oval"
+            fillRule="nonzero"
+        />
+        </g>
+    </g>
+    </g>
+</svg>

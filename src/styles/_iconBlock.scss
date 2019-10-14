@@ -1,0 +1,22 @@
+.cus-icon-block {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.cus-icon-block-heading {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cus-icon-block-inner {
+  padding: 10px;
+  border: 1px solid $mainColor;
+}
+.cus-icon-block-image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-top: -35px;
+  margin-bottom: 20px;
+  background-color: $mainBgColor;
+}

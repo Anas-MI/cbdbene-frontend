@@ -1,0 +1,61 @@
+@font-face {
+  font-family: SuisseUltathin;
+  src: url("../assets/fonts/Suisse_BP_Intl_UltraLight.otf");
+  /* font-weight: 100; */
+}
+@font-face {
+  font-family: SuisseThin;
+  src: url("../assets/fonts/Suisse_BP_Intl_Thin.otf");
+  /* font-weight: 300; */
+}
+@font-face {
+  font-family: SuisseReg;
+  src: url("../assets/fonts/Suisse_BP_Intl_Regular.otf");
+  /* font-weight: normal; */
+}
+@font-face {
+  font-family: SuisseMed;
+  src: url("../assets/fonts/Suisse_BP_Intl_Medium.otf");
+  /* font-weight: 500; */
+}
+@font-face {
+  font-family: ZapfHumanist;
+  src: url("../assets/fonts/zapf-humanist-601-bt.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Regular";
+  src: url("../assets/fonts/Suisse/SuisseIntl-Regular-WebS.woff2")
+      format("woff2"),
+    url("../assets/fonts/Suisse/SuisseIntl-Regular-WebS.woff") format("woff"),
+    url("../assets/fonts/Suisse/SuisseIntl-Regular-WebS.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Suisse Regular";
+  src: url("../assets/fonts/Suisse/SuisseIntl-Medium-WebS.woff2")
+      format("woff2"),
+    url("../assets/fonts/Suisse/SuisseIntl-Medium-WebS.woff") format("woff"),
+    url("../assets/fonts/Suisse/SuisseIntl-Medium-WebS.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Suisse Medium";
+  src: url("../assets/fonts/Suisse/SuisseIntl-Medium-WebS.woff2")
+      format("woff2"),
+    url("../assets/fonts/Suisse/SuisseIntl-Medium-WebS.woff") format("woff"),
+    url("../assets/fonts/Suisse/SuisseIntl-Medium-WebS.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Suisse SemiBold";
+  src: url("../assets/fonts/Suisse/SuisseIntl-SemiBold-WebS.woff2")
+      format("woff2"),
+    url("../assets/fonts/Suisse/SuisseIntl-SemiBold-WebS.woff") format("woff"),
+    url("../assets/fonts/Suisse/SuisseIntl-SemiBold-WebS.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Zapf Humanist";
+  src: url("../assets/fonts/Zapf/324B1A_0_0.woff2") format("woff2"),
+    url("../assets/fonts/Zapf/324B1A_0_0.woff") format("woff"),
+    url("../assets/fonts/Zapf/324B1A_0_0.ttf") format("truetype");
+}

@@ -1,0 +1,183 @@
+@mixin btnBorder($color: $btnMainColor) {
+  border-radius: 0;
+  border: 1px solid $color;
+}
+@mixin defaultBtnSetting() {
+  border-radius: 0;
+  font-size: $btnFontSize;
+  font-family: $btnFontFamily;
+  text-decoration: none;
+  text-align: center;
+  font-weight: normal;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  transition: all 0.3s ease;
+  &.w15 {
+    width: 150px;
+  }
+  &.w25 {
+    width: 250px;
+  }
+}
+@mixin button($color: $btnMainColor, $hoverColor: $btnHoverColor) {
+  @include btnBorder($color);
+  @include defaultBtnSetting();
+  padding: 15px 30px;
+  color: $color;
+  fill: $color;
+  &:hover {
+    color: $hoverColor;
+    fill: $hoverColor;
+    background: $color;
+  }
+}
+@mixin noBorderBtn($color: $btnMainColor) {
+  @include defaultBtnSetting();
+  font-size: $btnFontSize;
+  font-family: $btnFontFamily;
+  color: $color;
+  fill: $color;
+}
+@mixin fillBtn($color: $btnMainColor, $hoverColor: $btnHoverColor) {
+  @include btnBorder($color);
+  @include defaultBtnSetting();
+  padding: 15px 30px;
+
+  color: $hoverColor;
+  background: $color;
+  &:hover {
+    color: $color;
+    background: $hoverColor;
+  }
+
+  &.lessPadding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  &.mobile-remove-btn-padding {
+    @media (max-width: 639px) {
+      padding: 8px 5px;
+    }
+  }
+}
+button:disabled{
+  pointer-events: none;
+}
+.btn {
+  @include defaultBtnSetting();
+  display: block;
+  padding: 15px 30px;
+}
+.btn a:hover {
+  color: inherit;
+}
+
+.btn:hover a {
+  color: inherit;
+}
+.btn1 {
+  @include fillBtn($buttonColor1, $buttonHoverColor1);
+  // background: $buttonColor1 !important;
+  // cursor: pointer;
+  // border: none;
+}
+.btn1:hover {
+  opacity: 0.8;
+}
+
+.btn2 {
+  @include fillBtn($buttonColor2, $buttonHoverColor2);
+}
+
+.btn3 {
+  @include fillBtn($buttonColor3, $buttonHoverColor3);
+}
+.btn4 {
+  @include fillBtn($buttonColor4, $buttonHoverColor4);
+}
+.btn5 {
+  @include fillBtn($buttonColor5, $buttonHoverColor5);
+}
+.btn6 {
+  @include fillBtn($buttonColor6, $buttonHoverColor6);
+}
+.btn7 {
+  @include fillBtn($buttonColor7, $buttonHoverColor7);
+}
+.btn8 {
+  @include fillBtn($buttonColor8, $buttonHoverColor8);
+}
+.btn9 {
+  @include fillBtn($buttonColor9, $buttonHoverColor9);
+}
+.btn10 {
+  @include fillBtn($buttonColor10, $buttonHoverColor10);
+}
+button.btn.btn-lg.btn-custom {
+  background: $buttonColor6 !important;
+  color: #fff;
+  border: none;
+}
+button.btn.btn-lg.btn-custom2 {
+  background: $buttonColor6 !important;
+  color: #fff;
+  border: none;
+}
+
+.btnAs {
+  border: 1px solid $btnBg;
+  height: 60px;
+  min-width: 210px;
+  padding: 18px 23px;
+  position: relative;
+  transition: all 500ms ease;
+  display: inline-block;
+  &.has-hover {
+    cursor: pointer;
+    &:active {
+      background-color: $borderColor;
+    }
+  }
+}
+.btnAs.btnAs--filled {
+  background-color: $btnBg;
+  color: $lightTwo;
+}
+.btn-red {
+  color: #fff;
+  background-color: #f44336;
+  border: 1px solid #f44336;
+  &:hover {
+    color: #fff;
+    background-color: #d6291c;
+  }
+}
+.btn-blue {
+  color: #fff;
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+  &:hover {
+    color: #fff;
+    background-color: #0d7edb;
+  }
+}
+.btn-light-grey {
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  &:hover {
+    color: #fff;
+    background-color: #9e9e9e;
+  }
+}
+.btn-outline-shopping {
+  @include defaultBtnSetting();
+  border: 1px solid #333;
+  &:hover {
+    color: #fff;
+    background-color: #333;
+  }
+}

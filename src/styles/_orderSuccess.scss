@@ -1,0 +1,11 @@
+.order-success{
+    margin-bottom: 40px;
+    &__msg-wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__content-wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
