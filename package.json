@@ -5,7 +5,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "async-waterfall": "^0.1.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "bootstrap": "^4.2.1",
     "box-dimension-calculator": "^1.0.0",
